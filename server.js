@@ -18,8 +18,8 @@ app.use(express.json());
 
 const db = mysql.createConnection({
     host: 'bnzrobzddxvwvg1yye62-mysql.services.clever-cloud.com',
-    user: 'uevr6pdvldzii9tn',
-    password: 'YRieQx3hJeIc5dxxpGqT',
+    user: 'root',
+    password: '',
     database: 'task',
 });
 
