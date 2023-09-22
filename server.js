@@ -9,12 +9,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// const db = mysql.createConnection({
+//     host: '127.0.0.1',
+//     user: 'root',
+//     password: '',
+//     database: 'task',
+// });
+
 const db = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: '',
-    database: 'task',
+    host: 'bnzrobzddxvwvg1yye62-mysql.services.clever-cloud.com',
+    user: 'uevr6pdvldzii9tn',
+    password: 'YRieQx3hJeIc5dxxpGqT',
+    database: 'bnzrobzddxvwvg1yye62',
 });
+
 
 db.connect((err) => {
     if (err) {
@@ -423,6 +431,6 @@ app.get('/comments/:taskId', (req, res) => {
     });
   });
 
-app.listen(8081, () => {
-    console.log(`Server is running on port 8081`);
+app.listen(3306, () => {
+    console.log(`Server is running on port 3306`);
 });
