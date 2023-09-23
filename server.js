@@ -9,19 +9,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// const db = mysql.createConnection({
-//     host: '127.0.0.1',
-//     user: 'root',
-//     password: '',
-//     database: 'task',
-// });
-
 const db = mysql.createConnection({
-    host: 'bnzrobzddxvwvg1yye62-mysql.services.clever-cloud.com',
+    host: '127.0.0.1',
     user: 'root',
     password: '',
     database: 'task',
 });
+
+// const db = mysql.createConnection({
+//     host: 'bnzrobzddxvwvg1yye62-mysql.services.clever-cloud.com',
+//     user: 'root',
+//     password: '',
+//     database: 'task',
+// });
 
 
 db.connect((err) => {
